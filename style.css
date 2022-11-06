@@ -1,0 +1,24 @@
+* {
+    margin: 0 auto; 
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: auto;
+    border: 2px solid red; 
+}
+
+#sprite {
+    height: 50%;
+    width: 50%;
+    border: 2px solid blue;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    border: 2px solid green;
+}
