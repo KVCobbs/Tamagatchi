@@ -22,7 +22,6 @@ let tamagatchi = {
             console.log(fed)
             }
         }
-        
 };
 
 
