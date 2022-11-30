@@ -13,13 +13,14 @@
 }
 
 #feed {
-  grid-area: 4 / 2 / 5 / 3;
+  grid-area: 4/ 2 / 5 / 3;
 }
 
-/* .div2 {
-  grid-area: 4 / 3 / 5 / 4;
+#clean {
+  grid-area: 4 / 4 / 5 / 4;
 }
 
+/*
 .div3 {
   grid-area: 4 / 4 / 5 / 5;
 }
