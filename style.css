@@ -3,31 +3,33 @@
     height: 100%;
 }
 
+
 .container {
-  border: 2px red solid;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
+#sprite{
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+#poop{
+  grid-area: 3 / 6 / 4 / 6;
+  color: brown;
+  border: 2px solid brown;
+}  
+
 #feed {
-  grid-area: 4 / 2 / 5 / 3;
+  grid-area: 5 / 3 / 6 / 4;
 }
 
-/* .div2 {
-  grid-area: 4 / 3 / 5 / 4;
+#check {
+  grid-area: 5 / 4 / 6 / 5;
 }
 
-.div3 {
-  grid-area: 4 / 4 / 5 / 5;
+#clean {
+  grid-area: 5 / 5 / 6 / 6;
 }
-
-.div4 {
-  grid-area: 5 / 1 / 6 / 6;
-}
-
-.div5 {
-  grid-area: 1 / 1 / 4 / 6;
-} */
