@@ -13,7 +13,10 @@
 }
 
 #sprite{
+  border: solid 6px green;
+  border-radius: 10px;
   grid-area: 2 / 2 / 4 / 4;
+  background-color: white;
 }
 
 #poop{

@@ -1,3 +1,38 @@
+const canvas = document.getElementById("sprite"); 
+const context = canvas.getContext("2d");
+const width = canvas.width = 350;
+const height = canvas.height = 480; 
+const frameWidth = 34;
+const frameHeight = 100;
+const xPostion = -50;
+const yPosition = 60;
+const scale = 14;
+
+const spriteSheet = new Image();
+spriteSheet.src = 'assets/images/spritesheet.png';
+
+function animate() {
+  context.drawImage(
+    spriteSheet,
+    0,
+    0,
+    frameWidth,
+    frameHeight,
+    xPostion,
+    yPosition,
+    frameWidth * scale,
+    frameHeight * scale,
+  )
+}
+
+function frame() {
+  context.clearRect(0,0, width, height);
+  animate();
+  requestAnimationFrame(frame)
+}
+
+frame()
+
 //let's create some food 
 let avacado = 2;
 let artichoke = 5;
@@ -5,8 +40,9 @@ let bagel = 8;
 let beer = -6;
 let foods = [avacado, artichoke, bagel, beer,];
 
+
 //Time to create poop 
-let poop = -10;
+// let poop = -10;
 
 //look into webstorage as a way to mimic the storage 
 //create a timer for poop to appear 
@@ -89,3 +125,6 @@ poopButton.addEventListener("click", function() {
   //         this.health -= 10 
   //         console.log(this.health)
   //       },
+
+  //future idea to play with DSA 
+  //adding a stack of food 
